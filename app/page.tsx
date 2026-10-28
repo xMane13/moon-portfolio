@@ -6,6 +6,9 @@ import { moonLevels, MOON_TEXT } from "@/lib/moon";
 import portrait from "@/lib/portrait.json";
 
 const EMAIL = "manuel131202@outlook.com";
+const EMAIL_ALT = "manuel976431@gmail.com";
+const PHONE = "+593969768860";
+const PHONE_LABEL = "+593 96 976 8860";
 const GITHUB = "https://github.com/xMane13";
 const PORTRAIT_TEXT = "manuel maria munoz cardenas. moon. xmane13. yachay tech. urcuqui. ecuador. ";
 
@@ -256,6 +259,10 @@ export default function Page() {
             es="Escríbeme por investigación, un proyecto o un trabajo."
           />
           <a className="footer__mail" href={`mailto:${EMAIL}`}>{EMAIL}</a>
+          <ul className="footer__contact">
+            <li><a href={`mailto:${EMAIL_ALT}`}>{EMAIL_ALT}</a></li>
+            <li><a href={`tel:${PHONE}`}>{PHONE_LABEL}</a></li>
+          </ul>
           <ul className="footer__links">
             <li><a href={GITHUB}>GitHub</a></li>
             <li><a href="https://scholar.google.com/citations?user=NJvixZwAAAAJ">Google Scholar</a></li>

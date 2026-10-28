@@ -5,8 +5,8 @@ import { T } from "@/components/T";
 import { moonLevels, MOON_TEXT } from "@/lib/moon";
 import portrait from "@/lib/portrait.json";
 
-const EMAIL = "manuel131202@outlook.com";
-const EMAIL_ALT = "manuel976431@gmail.com";
+const EMAIL = "manuel.munoz@yachaytech.edu.ec";
+const EMAIL_ALTS = ["manuel131202@outlook.com", "manuel976431@gmail.com"];
 const PHONE = "+593969768860";
 const PHONE_LABEL = "+593 96 976 8860";
 const GITHUB = "https://github.com/xMane13";
@@ -260,7 +260,7 @@ export default function Page() {
           />
           <a className="footer__mail" href={`mailto:${EMAIL}`}>{EMAIL}</a>
           <ul className="footer__contact">
-            <li><a href={`mailto:${EMAIL_ALT}`}>{EMAIL_ALT}</a></li>
+            {EMAIL_ALTS.map((m) => <li key={m}><a href={`mailto:${m}`}>{m}</a></li>)}
             <li><a href={`tel:${PHONE}`}>{PHONE_LABEL}</a></li>
           </ul>
           <ul className="footer__links">
